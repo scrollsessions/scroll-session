@@ -1,14 +1,14 @@
 import { useState } from "react";
-import Hero from "./Components/Hero";
-import Results from "./Components/Results";
-import TotalPoints from "./Components/TotalPoints";
-import useFetch from "./hooks/useFetch";
-import ProjectMarks from "./Components/ProjectMarks";
-import BridgePoints from "./Components/BridgePoints";
-import Footer from "./Components/Footer";
-import Loading from "./Components/Loading";
-import Error from "./Components/Error";
-import UserPortfolio from "./Components/UserPortfolio";
+import Hero from "./Hero";
+import Results from "./Results";
+import TotalPoints from "./TotalPoints";
+import useFetch from "../hooks/useFetch";
+import ProjectMarks from "./ProjectMarks";
+import BridgePoints from "./BridgePoints";
+import Footer from "./Footer";
+import Loading from "./Loading";
+import Error from "./Error";
+import UserPortfolio from "./UserPortfolio";
 
 function App() {
   const [input, setInput] = useState("");
