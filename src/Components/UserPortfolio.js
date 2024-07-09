@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import { WalletIcon } from "./Icons";
 
@@ -14,7 +16,6 @@ function UserPortfolio({ data }) {
   };
 
   const portfolioData = newData(data);
-  console.log(portfolioData);
 
   return (
     <div className="wallet-points w-full pt-4 overflow-y-scroll">
@@ -95,7 +96,7 @@ function UserPortfolio({ data }) {
                     <p className="font-semibold text-xl">Amount</p>
                   </div>
                   {portfolioData[key].map((item) =>
-                    item.attributes.fungible_info.flags.verified &&
+                    // item.attributes.fungible_info.flags.verified &&
                     item.attributes.value > 0.01 ? (
                       <div
                         key={item.attributes.changes.absolute_1d}
@@ -112,7 +113,7 @@ function UserPortfolio({ data }) {
                             alt={`${item.attributes.fungible_info.name} Logo`}
                           />
                           <p>
-                            {item.attributes.fungible_info.symbol}{" "}
+                            {item.attributes.fungible_info.symbol}
                             <span
                               className={`text-sm font-extralight p-2 rounded-lg bg-[#ffdeb5] ml-2 ${item.attributes.position_type}`}
                             >
